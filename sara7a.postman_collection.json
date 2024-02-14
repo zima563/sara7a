@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "d002289d-36a4-47fc-99f8-ca3dd86d23d6",
+		"name": "sara7a",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29786034"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "signup",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ahmed\",\r\n    \"email\": \"muhammedabdelazeem375@gmail.com\",\r\n    \"password\": \"Ahmed@123456\",\r\n    \"rePassword\":\"Ahmed@123456\",\r\n    \"age\": \"26\"\r\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"muhammedabdelazeem375@gmail.com\",\r\n    \"password\" :\"Ahmed@123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgetting Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\" : \"muhammedabdelazeem3752@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/forgettingPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"forgettingPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check PIN CODE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"muhammedabdelazeem3752@gmail.com\",\r\n    \"pinCode\" :\"7614\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checkpinCode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checkpinCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"muhammedabdelazeem3752@gmail.com\",\r\n    \"newPassword\" :\"Mohamed@123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/resetPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unsupscribe",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTllMTIxNmViMzNjNmU4ZWZhM2Q5OTEiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTgyNzZ9.MwrRx2BDaucuOTOAW1YJV_fFZB-mswBtytmT4eHBC48",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/unsupscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"unsupscribe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "softDelete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTY4MTB9.LNJsGLKd2cLpBQH8AhglcLKBCGmWrCzpgrEPzYYw9Ao",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/softDelete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"softDelete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTUzNDJ9.IO2UfLdONrpFn_5_BJE-1PrAxKjmhG7dSyqcp-DLR1o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/viewUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"viewUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logOut",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTY4MTB9.LNJsGLKd2cLpBQH8AhglcLKBCGmWrCzpgrEPzYYw9Ao",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/logOut",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"logOut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTY4MTB9.LNJsGLKd2cLpBQH8AhglcLKBCGmWrCzpgrEPzYYw9Ao",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"muhamed\",\r\n    \"lastName\" : \"abdelazim\",\r\n    \"age\" : \"23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTY4MTB9.LNJsGLKd2cLpBQH8AhglcLKBCGmWrCzpgrEPzYYw9Ao",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\" : \"Ahmed@123456\",\r\n    \"password\" : \"Ahmed@1234567\",\r\n    \"confirmPassword\" : \"Ahmed@1234567\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/659dfdfe05c90b72b5464ae5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"659dfdfe05c90b72b5464ae5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTlkZmRmZTA1YzkwYjcyYjU0NjRhZTUiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTc4MTZ9.9T8JPg_i1jHcTTkfQyG-bKJSAB_kCJiWG2CiIu95Kl8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/users/659dfdfe05c90b72b5464ae5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"659dfdfe05c90b72b5464ae5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "messages",
+			"item": [
+				{
+					"name": "allMessage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/allMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"allMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addMessage",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTllMTVhNmE4MGVjMzFmYTQ4ZmY3N2QiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTkwOTR9.0jsyz-S_qF72xcKCpBwjMuuWhkuGW2FK3ojYVSMauUY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\" : \"bbkbibbikhbibvvivvi\",\r\n    \"receiveId\" : \"659e15a6a80ec31fa48ff77d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/addMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/message/659e166ca80ec31fa48ff78e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"659e166ca80ec31fa48ff78e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "messsageOfUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NTllMTVhNmE4MGVjMzFmYTQ4ZmY3N2QiLCJyb2xlIjoidXNlciIsImlzQWN0aXZlIjp0cnVlLCJpYXQiOjE3MDQ4NTkwOTR9.0jsyz-S_qF72xcKCpBwjMuuWhkuGW2FK3ojYVSMauUY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/messageOfUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"messageOfUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
